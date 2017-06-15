@@ -64,32 +64,44 @@
         "hot chocolate": 2.50
     };
 
-    function makeCoffee() {
-        myImage.setAttribute('src', 'static/coffee_mug.jpg');
+    function startOver() {
+
         setTimeout(makeCoffeeMachine, 1500);
-        setTimeout(makeCoffeeMug, 2500);
+        setTimeout(makeCoffeeMug, 4000);
+        setTimeout(makeCoffee, 6000);
+
+
+    }
+
+    function makeCoffee() {
+        myImage.setAttribute('src', 'static/coffee_beans.jpg');
+        
+    }
+
+    function makeCoffeeMug() {
+        myImage.setAttribute('src', 'static/coffee_mug.jpg');
+        
 
     }
 
     function makeCoffeeMachine() {
         myImage.setAttribute('src', 'static/coffee_machine.jpg');
-         //makeCoffee ();
+        
     }
 
     function makeCoffeeMug() {
         myImage.setAttribute('src', 'static/coffee_mug.jpg');
     }
 
-    myImage.addEventListener('click', makeCoffee);
+    myImage.addEventListener('click', startOver);
     
        
 
 
     
 
-    // var timeoutID = scope.setTimeout(function () { myImage.setAttribute('src', 'static/coffee_machine.jpg'; }, 1500));
-    // var timeoutID = scope.setTimeout(function () { myImage.setAttribute('src', 'static/coffee_mug.jpg'; }, 2500));
-    // myImage.setAttribute('src', 'static/coffee_beans.jpg');
+    
+    
 
 </script>
 
